@@ -1,0 +1,52 @@
+.navbar-brand {
+    margin-left:3rem;
+}
+.navbar {
+    background-color:white; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size:0.9rem;
+    padding:1rem 2rem;
+}
+.nav-item{
+    padding-right: 2.5rem;
+ }
+.jumbotron {
+   padding-top: 1px; height: 400px;
+ }
+.about {
+    background-image: url(../Img/eunji3.jpg);
+}
+.sep {
+	background-attachment: fixed;
+	background-position: 30% 1%;
+    background-repeat: no-repeat;
+	height: 450px;
+    position: relative;
+    background-color: transparent;
+}
+.container {
+  width: 100%
+  
+}
+.info p {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1rem;
+    line-height: 2.3rem;
+}
+.heading { 
+    font-family: 'Noto Serif KR', sans-serif;
+    font-size: 2rem; 
+
+}
+h5 {
+    font-family: 'Noto Serif KR', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.work p {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+

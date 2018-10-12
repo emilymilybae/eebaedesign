@@ -1,0 +1,12 @@
+.navbar-brand {
+    margin-left:3rem;
+}
+.navbar {
+    background-color:white; 
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.9rem;
+    padding:1rem 2rem;
+}
+.nav-item{
+    padding-right: 2.5rem;
+ }
