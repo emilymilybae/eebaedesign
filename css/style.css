@@ -1,0 +1,141 @@
+
+.navbar-brand {
+    margin-left:3rem;
+}
+.navbar {
+    background-color:white; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 0.9rem;
+    padding:1rem 2rem;
+}
+.nav-item{
+    padding-right: 2.5rem;
+ }
+.arrowdown{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+    transition-delay: 3s;
+    animation: bounce 2s infinite;
+}
+
+
+.display-4 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-weight: 200; 
+    margin-bottom: 5rem; 
+    line-height:5rem; 
+    margin-top:1rem;
+    font-size: 50px;
+}
+.jumbotron{ 
+    background: white;
+}
+
+h1{
+    font-family: 'fontello';
+}
+
+.btn { 
+    border:0px; 
+    color:#FF5555;
+}
+
+.icon-hand-peace-o {
+    color: #FF5555;
+}
+
+.icon-emo-sunglasses {
+    color: #FF5555;
+}
+
+strong {
+    font-weight: 500;
+
+}
+
+/* header */
+
+/* projects */
+.media-body {
+    margin: 50px 0 30px 0;
+ 
+}
+.Project{
+    margin-bottom: 30px; 
+    font-size: 2.0625rem; 
+    font-family: 'Noto Serif', serif;
+}
+.text-box{
+    padding:4rem;
+}
+.content { 
+    height: auto;
+    margin-top:3rem;
+    padding-left: 3rem;
+}
+
+.contact { 
+    padding: 2.5rem 0;
+}
+.content h3 { 
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size: 2.4rem;
+    margin-top: 100px;
+    color: #000;
+    margin-top: 10px;
+}
+.content p { 
+    font-family: 'Open Sans', sans-serif; 
+    margin-top: 1.5rem; 
+}
+#contactform {
+    padding: 2rem; 
+    border-radius: 0; 
+    
+}
+    
+.btn-primary { 
+    width: 7rem; 
+    font-family: 'Open Sans', sans-serif; 
+    color:white; 
+    border-radius: 0; 
+    background-color: black;
+
+}
+
+/* media */
+
+@media (max-width: 768px) {
+
+    .content {
+        width: 100%;
+}
+    #contactform { 
+        width: 80%;
+    }
+}
+
+@media (max-width: 992px){
+ .contact {
+    font-size: 14px;
+ }
+ .content {
+   align-content: center; 
+   margin-left: 3%;
+ }
+ #contactform { 
+     width: 90%;
+
+ }
+}
+
+/* footer */
+.footer-menu{ 
+    margin-top:3rem;
+   
+}

@@ -1,0 +1,48 @@
+.navbar-brand {
+    margin-left:3rem;
+}
+.navbar {
+    background-color:white; 
+    font-family: 'Open Sans', sans-serif;
+    font-size:0.9rem; 
+    padding:1rem 2rem;
+}
+.nav-item{
+    padding-right: 2.5rem;
+ }
+
+ 
+.content h3 {
+    font-family: 'Noto Serif KR', sans-serif;
+    line-height:3rem;
+    margin:3rem 3rem 2rem 4rem;
+}
+.content p {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1rem;
+    margin:0 3rem 2rem 4rem;
+}
+
+#contactform {
+    margin-top:3.5rem; 
+    padding-right: 4rem; 
+    padding-left: 4rem;
+}
+.btn-primary {
+    width: 7rem;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    border-radius: 0; border-color:black;
+    background-color: black;
+}
+.banner img { 
+    width: 500px; 
+    height: auto; 
+}
+
+@media (max-width: 992px){
+    #contactform { 
+        margin-top: 5px; 
+        width: 98%;
+    }
+   }
