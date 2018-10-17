@@ -1,11 +1,10 @@
-
 .navbar-brand {
     margin-left:3rem;
 }
 .navbar {
     background-color:white; 
-    font-family: 'Open Sans', sans-serif; 
-    font-size: 0.9rem;
+    font-family: 'Barlow', sans-serif;  
+    font-size:0.9rem;
     padding:1rem 2rem;
 }
 .nav-item{
@@ -23,13 +22,11 @@
     animation: bounce 2s infinite;
 }
 
-
 .display-4 {
     font-family: 'Noto Serif KR', sans-serif; 
     font-weight: 200; 
-    margin-bottom: 5rem; 
+    margin-bottom: 4.5rem; 
     line-height:5rem; 
-    margin-top:1rem;
     font-size: 50px;
 }
 .jumbotron{ 
@@ -55,7 +52,6 @@ h1{
 
 strong {
     font-weight: 500;
-
 }
 
 /* header */
@@ -70,45 +66,94 @@ strong {
     font-size: 2.0625rem; 
     font-family: 'Noto Serif', serif;
 }
+.Project p {
+    font-family: 'Barlow', sans-serif; 
+}
 .text-box{
     padding:4rem;
 }
 .content { 
     height: auto;
-    margin-top:3rem;
-    padding-left: 3rem;
 }
 
 .contact { 
-    padding: 2.5rem 0;
+    padding: 1rem 0;
 }
 .content h3 { 
     font-family: 'Noto Serif KR', sans-serif; 
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin-top: 100px;
     color: #000;
     margin-top: 10px;
 }
 .content p { 
-    font-family: 'Open Sans', sans-serif; 
-    margin-top: 1.5rem; 
+    font-family: 'Barlow', sans-serif; 
+    font-size: 1rem;
+    line-height: 2rem;
 }
+
 #contactform {
+    font-family: 'Barlow', sans-serif; 
     padding: 2rem; 
     border-radius: 0; 
-    
+  
+    /* buttons */
 }
-    
 .btn-primary { 
-    width: 7rem; 
-    font-family: 'Open Sans', sans-serif; 
+    width: 8rem; 
+    font-family: 'Barlow', sans-serif; 
+    letter-spacing:0.3rem;
+    font-size: 0.8rem;
     color:white; 
     border-radius: 0; 
+    border-color: black;
     background-color: black;
 
 }
+.button-arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 6em;
+}
+.button-arrow a {
+    position: absolute;
+    z-index: 1000;
+    transform: translateX(-50%);
+    transition: opacity .5s, visibility .5s;
+    transition-delay: 3s;
+    overflow: hidden;
+    animation: bounce 2s infinite;
+}
+.icon-down-open-big {
+    font-size: 2rem;
+    color: #FF5555;
+}
+
+.button-arrow-right {
+    font-family: 'Barlow', sans-serif; 
+    letter-spacing:0.3rem;
+    font-size: 0.8rem;
+}
+.button-arrow-right a {
+    color:#FF5555;
+}
+
+
+@-webkit-keyframes bounce {
+    0%   { top: 0px; }
+    50%  { top: -10px; }
+    100% { top: 0px; }
+}
+
+@keyframes bounce {
+    0%   { top: 0px; }
+    50%  { top: -10px; }
+    100% { top: 0px; }
+}
+
 
 /* media */
+
 
 @media (max-width: 768px) {
 
@@ -137,5 +182,7 @@ strong {
 /* footer */
 .footer-menu{ 
     margin-top:3rem;
+    font-family: 'Barlow', sans-serif; 
+    font-size: 0.9rem;
    
 }

@@ -1,0 +1,46 @@
+html, body {  height: 100%;}
+body {  
+background: #a67c52;/*** 상단 background 컬러 ***/  
+color: #FFF;}
+.skewed-bg {  
+background: #603913; /*** 하단 background 컬러 ***/ 
+padding: 200px 0;  
+-webkit-transform: skew(0deg, -10deg);  
+-moz-transform: skew(0deg, -10deg);  
+-ms-transform: skew(0deg, -10deg);  
+-o-transform: skew(0deg, -10deg);  
+transform: skew(0deg, -10deg);  
+margin-top: -200px; /*** 상단 background 여백높이 ***/}
+.skewed-bg .content {  
+-webkit-transform: skew(0deg, 10deg);  
+-moz-transform: skew(0deg, 10deg);  
+-ms-transform: skew(0deg, 10deg);  
+-o-transform: skew(0deg, 10deg);  
+transform: skew(0deg, 10deg);  
+text-align: center;}
+.skewed-bg .content .title {  
+padding-top: 100px;  
+font-weight: normal;  }
+.skewed-bg .content .text {  
+width: 60%;  
+margin: 25px auto;  
+color: #ff7d00;  }
+.footer {  
+padding-top: 300px;  
+margin-top: -200px; /*** 하단 background 여백높이 ***/}
+.footer .credits {  
+text-align: center;  
+color: #666;}
+.footer .credits .link {  
+color: #00B285;  
+text-decoration: none;}
+.footer .content {  
+width: 80%;  
+margin: 0 auto;  
+text-align: center;}
+.footer .content .text {  
+width: 100%;  
+margin: 15 auto;  
+color: #603913;  
+text-align: center;}
+

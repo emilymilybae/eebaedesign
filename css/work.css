@@ -3,10 +3,164 @@
 }
 .navbar {
     background-color:white; 
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Barlow', sans-serif;  
     font-size:0.9rem;
     padding:1rem 2rem;
 }
 .nav-item{
     padding-right: 2.5rem;
  }
+.mantra{
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-image: url('../Img/balance.jpg');
+    background-color: black rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+  }
+
+.jumbotron p {
+    padding-top: 7rem;
+    font-family: 'Barlow', sans-serif; 
+    color:white;
+    font-size: 16px;
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+.display-3 {
+    padding-top: 7rem;
+    font-family: 'Noto Serif', sans-serif; 
+    font-size:3.5rem;
+    color:white;    
+    letter-spacing: 1rem;
+}
+.iphone {
+    padding-left: 1rem;
+    margin: auto;
+}
+.content-p h2 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:1.8rem;
+    color:black;   
+
+}
+.content-1 img{
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.content-p p {
+    font-family: 'Barlow', sans-serif; 
+    color:black;
+    padding-top:1rem;
+}
+/* section2 */
+.skewed-bg {
+    background:#f8f9fa;
+    height: auto;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    transform: skew(0deg, 5deg);  
+}
+.content2 .row h3 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:2rem;
+    transform: skew(0deg, -5deg);  
+}
+.content2 .row p {
+    font-family: 'Barlow', sans-serif; 
+    color:black;
+    padding-top: 0px;
+    transform: skew(0deg, -5deg);  
+}
+
+/* section3 */
+.section3 {
+    margin-top: 100px;
+}
+#img-middle {
+    margin-left:-5rem;    
+}
+.content3 .row h3 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:2rem;
+}
+.content3 .row h4 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:1.8rem;
+    margin-top: 3rem;
+}
+.content3 .row p {
+    font-family: 'Barlow', sans-serif; 
+    color:black;
+    padding-top: 0px;
+}
+.content-user {
+    margin: auto;
+}
+
+/* section4 */
+.section4 {
+    margin-top: 100px;
+}
+.content4 h3 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:1.8rem;
+}
+.content4 p {
+    font-family: 'Barlow', sans-serif; 
+    color:black;
+    line-height: 1.5rem;
+    padding-top: 0px;
+}
+/* section5 */
+.skewed-bg2 {
+    background:#f8f9fa;
+    height: auto;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    transform: skew(0deg, -5deg);  
+}
+.content5 .row img {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:2rem;
+    transform: skew(0deg, 5deg);  
+}
+.content5 h3 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:2rem;
+    transform: skew(0deg, 5deg);  
+}
+.content5 p {
+    font-family: 'Barlow', sans-serif; 
+    color:black;
+    line-height: 1.5rem;
+    transform: skew(0deg, 5deg);  
+}
+
+/* section6 */
+.section6 {
+    margin-top: 100px;
+}
+.content6 h3 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:2rem;
+}
+.content6 p {
+    font-family: 'Barlow', sans-serif; 
+    color:black;
+    line-height: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+/* section7 */
+
+.content7 {
+    background:#f8f9fa;
+    width: 65%;
+    height: auto;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
