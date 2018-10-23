@@ -1,34 +1,42 @@
+html {
+    scroll-behavior: smooth;
+  }
 .navbar-brand {
     margin-left:3rem;
 }
 .navbar {
     background-color:white; 
-    font-family: 'Barlow', sans-serif;  
-    font-size:0.9rem;
     padding:1rem 2rem;
 }
 .nav-item{
-    padding-right: 2.5rem;
+    padding-right: 1.3rem;
+    letter-spacing: 0.3rem;
  }
-.arrowdown{
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .5s, visibility .5s;
-    transition-delay: 3s;
-    animation: bounce 2s infinite;
-}
+ .nav-item a {
+    font-family: 'Barlow', sans-serif;  
+    font-size:0.85rem;
+    padding-right: 2.5rem;
+    letter-spacing: 0.3rem;
+    color:#3d3d3d;
+    text-decoration: none;
+    font-weight:600;
+ }
+ .nav-item:hover a {
+    color:#FF5555;
+    transition: all .3s ease-in-out;
+ }
 
+/* hero */
+ 
 .display-4 {
     font-family: 'Noto Serif KR', sans-serif; 
     font-weight: 200; 
-    margin-bottom: 4.5rem; 
+    padding-top: 2rem;
+    margin-bottom: 4rem; 
     line-height:5rem; 
-    font-size: 50px;
+    font-size: 3.125rem;
 }
+
 .jumbotron{ 
     background: white;
 }
@@ -54,24 +62,49 @@ strong {
     font-weight: 500;
 }
 
+
 /* header */
 
 /* projects */
 .media-body {
-    margin: 50px 0 30px 0;
- 
+    margin: 3.125rem 0 1.875rem 0;
 }
 .Project{
-    margin-bottom: 30px; 
+    margin-bottom: 1.875rem; 
     font-size: 2.0625rem; 
     font-family: 'Noto Serif', serif;
-}
-.Project p {
-    font-family: 'Barlow', sans-serif; 
 }
 .text-box{
     padding:4rem;
 }
+.img-box {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.img-fluid {
+    transition: all 0.4s ease-in-out;
+    -webkit-filter: brightness(100%);
+}
+.img-fluid:hover {
+    background-color: black;
+    background-blend-mode: multiply;
+    transform: scale(1.05);
+}
+
+.text {
+    color: white;
+    font-size: 1.25rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Noto Serif KR', sans-serif;
+    font-size: 2rem;
+  }
 .content { 
     height: auto;
 }
@@ -82,9 +115,8 @@ strong {
 .content h3 { 
     font-family: 'Noto Serif KR', sans-serif; 
     font-size: 2rem;
-    margin-top: 100px;
-    color: #000;
     margin-top: 10px;
+    color: #000;
 }
 .content p { 
     font-family: 'Barlow', sans-serif; 
@@ -108,35 +140,66 @@ strong {
     border-radius: 0; 
     border-color: black;
     background-color: black;
+}
 
+.btn-secondary { 
+    width: 8rem; 
+    font-family: 'Barlow', sans-serif; 
+    letter-spacing:0.3rem;
+    font-size: 0.8rem;
+    color:white; 
+    border-radius: 0; 
+    border-color: black;
+    background-color: black;
 }
-.button-arrow {
-    position: absolute;
-    left: 50%;
-    bottom: 6em;
-}
-.button-arrow a {
-    position: absolute;
-    z-index: 1000;
-    transform: translateX(-50%);
+
+#button-arrow {
+    position: relative;
+    left: 47.5%;
+    bottom: 8%;
     transition: opacity .5s, visibility .5s;
     transition-delay: 3s;
     overflow: hidden;
     animation: bounce 2s infinite;
+    cursor: pointer;
 }
+
 .icon-down-open-big {
     font-size: 2rem;
     color: #FF5555;
 }
 
-.button-arrow-right {
+.btn-right {
+    margin-top: 0.9rem;
     font-family: 'Barlow', sans-serif; 
-    letter-spacing:0.3rem;
+    letter-spacing:0.2rem;
     font-size: 0.8rem;
+    color:#0169D9;
+    transition: all .3s ease-in-out;
 }
-.button-arrow-right a {
+.btn-right:hover {
     color:#FF5555;
+    font-weight: 700;
+    font-size: 0.825rem;
 }
+.btn-left {
+    margin-top: 0.9rem;
+    font-family: 'Barlow', sans-serif; 
+    letter-spacing:0.2rem;
+    font-size: 0.8rem;
+    color:#0169D9;
+    transition: all .3s ease-in-out;
+}
+
+.btn-left:hover {
+    color:#FF5555;
+    font-size: 0.825rem;
+    font-weight: 700;
+}
+
+
+
+
 
 
 @-webkit-keyframes bounce {
@@ -152,6 +215,9 @@ strong {
 }
 
 
+
+
+
 /* media */
 
 
@@ -163,11 +229,20 @@ strong {
     #contactform { 
         width: 80%;
     }
+    .display-4 {
+        font-size: 2.25rem;
+        line-height: 3.4375rem;
+    }
+    .Project{
+        margin-bottom: 1.875rem;
+        font-size: 1.7rem; 
+        font-family: 'Noto Serif', serif;
+    }
 }
 
 @media (max-width: 992px){
  .contact {
-    font-size: 14px;
+    font-size: 0.875rem;
  }
  .content {
    align-content: center; 
@@ -178,11 +253,32 @@ strong {
 
  }
 }
+@media (min-width: 576px){
+.jumbotron {
+    padding: 2rem 2rem;
+}
+}
 
 /* footer */
-.footer-menu{ 
-    margin-top:3rem;
-    font-family: 'Barlow', sans-serif; 
-    font-size: 0.9rem;
-   
+footer {
+    background-color:#28282E;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.footer-menu a { 
+    font-family: 'Barlow', sans-serif;  
+    font-size:0.85rem;
+    letter-spacing: 0.3rem;
+    color:#60717A;
+    text-decoration: none;
+    font-weight:600;
+}
+
+
+.footer-menu:hover a { 
+    font-family: 'Barlow', sans-serif;  
+    color:#FF5555;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
 }

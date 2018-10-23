@@ -12,35 +12,35 @@
    <link rel="stylesheet" href="css/about.css">
    
    <!-- Stylesheet Fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Noto+Serif+KR:200,400|Open+Sans|Roboto" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Barlow|Noto+Serif|Noto+Serif+KR|Shadows+Into+Light" rel="stylesheet">
   
    <!-- icon -->
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-   <link rel="stylesheet" href="fontello-2d67810f/css/arrow-embedded.css">
+   <link rel="stylesheet" href="fontello-ee9286f2/css/arrow-embedded.css">
 
     <title>About Eunji</title>
   </head>
   <body>
       <!-- Navigation Bar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <a class="navbar-brand" href="index.html">
-          <img src="Img/logo5.png" width="150" height="auto" alt="logo"> 
-          </a>
+      <nav class="navbar navbar-expand-lg bg-white" id="section0">
+          <a class="navbar-brand" href="index.html">
+              <img src="Img/logo5.png" width="150" height="auto" alt="logo"> 
+            </a>
 
-            <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="work.html">WORK</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about.html">ABOUT</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+              <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="index.html">HOME <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item" id="work-item">
+                    <a href="index.html">WORK</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="about.html">ABOUT</a>
+                  </li>
+                </ul>
+              </div>
+        </nav>
             
             <!-- section1 -->
             <section class="about bg-light pb-2"> 
@@ -52,25 +52,23 @@
                     <p>I believe if user experience is created for the user, it should be designed based on the user’s actions and words. Not only for the provider or even the designer. The user’s needs are very simple. However, our desire for creating such a service makes things complicated. I wish to become the bridge using my design to communicate between the user and the provider.<br></p>
                     <p>Feel free to contact me if you would like to get in touch.<br>
                     <i class="icon-mail-alt"></i>
-                    <a href="#" class="email">emilymilybae@gmail.com</a>
+                    <a href="mailto:emilymilybae@gmail.com" class="email">emilymilybae@gmail.com</a>
                     <i class="icon-phone-1 ml-5"></i>
                     213.434.3119</p>
-                    <input class="btn btn-primary mt-3 btn-view" type="submit" value="VIEW RESUME">
+                    <a href="https://drive.google.com/open?id=10Vqh54Bt9rAxuvrtscIIofZdWIhVQHPG"><input class="btn btn-primary mt-3 btn-view" type="submit" value="VIEW RESUME"></a>
                     </div>
                     <div class="photo col-lg-4 content">
                         <img src="Img/eunji2_edit.jpg" alt="me" class="no-repeat">
                     </div>
                   </div>
-                  <div class="button-arrow">
-                    <a href="#next">
-                        <i class="icon-down-open-big"></i>
-                    </a>
-                </div>
+                  <a href="#section1" id="button-arrow">
+                    <i class="icon-down-open-big"></i>
+                 </a>
                 </div>
              </section>
 
             <!-- section2 -->
-            <section class="contact" id="next"> 
+            <section class="contact"  id="section1"> 
                 <div class="container mt-3">                
                    <div class="row justify-content-center">
                    <div class="col-lg-6 content">
@@ -83,33 +81,75 @@
                       I am always down for talking about new challenges.</p>
                     </div>
 
-                    <form class="col-lg-6" id="contactform">
-                        <div class="form-group mx-lg-12">
-                          <label for="name">Name</label>
-                          <input type="text" class="form-control" >
-                        </div>
-                        <div class="form-group mx-lg-12">
-                          <label for="email">Email address</label>
-                          <input type="email" class="form-control" id="Input1">
-                        </div>
-                        <div class="form-group mx-lg-12">
-                          <label for="textarea">Subject</label>
-                          <textarea class="form-control" id="Textarea1" rows="3"></textarea>
-                        </div>
-                        <input class="btn btn-primary mt-2" type="submit" value="SUBMIT">
-                      </form>
-        
+                    <form class="col-lg-6" id="contactform" action="https://formspree.io/emilymilybae@email.com" method="POST">
+                      <div class="form-group mx-lg-12">
+                        <label for="name">Your name</label>
+                        <input type="text" class="form-control" >
+                      </div>
+                      <div class="form-group mx-lg-12">
+                        <label for="email">Email address</label>
+                        <input type="email" name="_replyto" class="form-control" id="Input1">
+                      </div>
+                      <div class="form-group mx-lg-12">
+                        <label for="textarea">Subject</label>
+                        <textarea class="form-control" id="Textarea1" rows="3"></textarea>
+                      </div>
+                      <button class="btn btn-primary mt-3" value="Send" type="submit" data-toggle="modal" data-target="#mymodal">SUBMIT</button>
+                    </form>
                 </div>
-            </div>
+              </div>
                 </section>
 
+            <!-- Modal -->
+            <div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modaltitle"></h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="Img/eunji3.jpg" alt="eunji's picture" style="width:100%" >
+                  <h3 style="font-family: 'Barlow', sans-serif; padding-top: 1rem; color:#FF5555;">Thanks for submitting</h3>
+                  <p style="font-family: 'Barlow', sans-serif; ">Your message has been sent successfully<i class="icon-emo-thumbsup pr-3"></i><br>I will reply back asap</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">CLOSE</button>
+                </div>
+              </div>
+            </div>
+            </div>
 
-                
+    <!-- footer -->
+    <footer class="pt-4 mb-md-5 pt-md-5 border-top">
+      <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <a class="footer-logo" href="index.html">
+                <img class="mb-2" src="Img/logo5.png" alt="logo" width="100"></a>
+                <small class= "d-block" mb-3 text-muted> © 2018-2019 Eunji Bae</small>
+            </div>
+            <div class="col-sm ml-3">
+                <ul class="list-unstyled text-small">
+                    <li class="footer-menu mt-1">
+                      <a class="text-muted" href="index.html">HOME</a></li>
+                    <li class="footer-menu mt-3">
+                        <a class="text-muted" href="work.html">WORK</a></li>
+                    <li class="footer-menu mt-3">
+                        <a class="text-muted" href="#">ABOUT</a></li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
 
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- Optional JavaScript -->
+        <script src="js/about.js"></script>
   </body>
 </html>

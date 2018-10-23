@@ -1,16 +1,32 @@
+html {
+    scroll-behavior: smooth;
+  }
 .navbar-brand {
     margin-left:3rem;
 }
 .navbar {
     background-color:white; 
-    font-family: 'Barlow', sans-serif;  
-    font-size:0.9rem;
     padding:1rem 2rem;
 }
 .nav-item{
+    padding-right: 1.3rem;
+    letter-spacing: 0.3rem;
+ }
+ .nav-item a {
+    font-family: 'Barlow', sans-serif;  
+    font-size:0.85rem;
     padding-right: 2.5rem;
+    letter-spacing: 0.3rem;
+    color:#3d3d3d;
+    text-decoration: none;
+    font-weight:600;
+ }
+ .nav-item:hover a {
+    color:#FF5555;
+    transition: all .3s ease-in-out;
  }
 
+ /* hero */
 .about h3 {
     font-family: 'Noto Serif KR', sans-serif; 
     font-size:2rem;
@@ -75,26 +91,33 @@
 
 }
 
-.button-arrow {
-    position: absolute;
-    left: 50%;
-    bottom: 7.5em;
-    overflow: hidden;
-}
-.button-arrow a {
-    position: absolute;
-    z-index: 1000;
-    transform: translateX(-50%);
+#button-arrow {
+    position: relative;
+    left: 47.5%;
+    bottom: 8%;
     transition: opacity .5s, visibility .5s;
     transition-delay: 3s;
     overflow: hidden;
     animation: bounce 2s infinite;
+    cursor: pointer;
 }
+
 .icon-down-open-big {
     font-size: 2rem;
     color: #FF5555;
 }
 
+.btn-secondary { 
+    width: 8rem; 
+    font-family: 'Barlow', sans-serif; 
+    letter-spacing:0.3rem;
+    font-size: 0.8rem;
+    color:white; 
+    border-radius: 0; 
+    border-color: black;
+    background-color: black;
+
+}
 @-webkit-keyframes bounce {
     0%   { top: 0px; }
     50%  { top: -10px; }
@@ -105,4 +128,15 @@
     0%   { top: 0px; }
     50%  { top: -10px; }
     100% { top: 0px; }
+}
+
+
+/* footer */
+.footer-menu a { 
+    font-family: 'Barlow', sans-serif;  
+    font-size:0.85rem;
+    letter-spacing: 0.3rem;
+    color:#3d3d3d;
+    text-decoration: none;
+    font-weight:600;
 }
