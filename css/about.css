@@ -132,11 +132,27 @@ html {
 
 
 /* footer */
+footer {
+    background-color:#1B1B1C;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+}
+
 .footer-menu a { 
     font-family: 'Barlow', sans-serif;  
     font-size:0.85rem;
     letter-spacing: 0.3rem;
-    color:#3d3d3d;
+    color:white;
     text-decoration: none;
-    font-weight:600;
+    font-weight:600; 
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
+
+.footer-menu:hover a { 
+    font-family: 'Barlow', sans-serif;  
+    color:#FF5555;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
 }

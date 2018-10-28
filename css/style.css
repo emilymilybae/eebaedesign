@@ -62,21 +62,22 @@ strong {
     font-weight: 500;
 }
 
-
 /* header */
 
 /* projects */
 .media-body {
     margin: 3.125rem 0 1.875rem 0;
 }
-.Project{
+.headline {
     margin-bottom: 1.875rem; 
     font-size: 2.0625rem; 
     font-family: 'Noto Serif', serif;
 }
+
 .text-box{
     padding:4rem;
 }
+
 .img-box {
     position: relative;
     overflow: hidden;
@@ -197,6 +198,27 @@ strong {
     font-weight: 700;
 }
 
+/* up button */
+#uparrow {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 100;
+    cursor: pointer; 
+    position: fixed;
+    text-indent: 100;
+    overflow: hidden;
+    color:#FF5555;
+    font-size: 2rem; 
+    transition: all 0.3 ease-in-out;
+}
+#uparrow:hover {
+    transform: scale(1.1);
+}
+
+
+
 
 
 
@@ -261,7 +283,7 @@ strong {
 
 /* footer */
 footer {
-    background-color:#28282E;
+    background-color:#1B1B1C;
     padding-top: 3rem;
     padding-bottom: 5rem;
 }
@@ -270,11 +292,13 @@ footer {
     font-family: 'Barlow', sans-serif;  
     font-size:0.85rem;
     letter-spacing: 0.3rem;
-    color:#60717A;
+    color:white;
     text-decoration: none;
-    font-weight:600;
+    font-weight:600; 
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
 }
-
 
 .footer-menu:hover a { 
     font-family: 'Barlow', sans-serif;  
@@ -282,3 +306,4 @@ footer {
     font-weight: 600;
     transition: all .3s ease-in-out;
 }
+

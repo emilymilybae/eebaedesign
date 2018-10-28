@@ -6,7 +6,7 @@ html {
 }
 .navbar {
     background-color:white; 
-    padding:1rem 2rem 0.5rem 2rem;
+    padding:1rem 2rem;
 }
 .nav-item{
     padding-right: 1.3rem;
@@ -25,88 +25,47 @@ html {
     color:#FF5555;
     transition: all .3s ease-in-out;
  }
-h2 {
-    font-family: 'Noto Serif KR', sans-serif; 
-    font-size:2rem;
-}
-h3 {
-    font-family: 'Noto Serif KR', sans-serif; 
-    font-size:2rem;
-}
-h4 {
-    font-family: 'Noto Serif KR', sans-serif; 
-    font-size:1.8rem;
-}
-h5 {
-    font-family: 'Barlow', sans-serif;
-    font-size:1.1rem;
-    color:#3d3d3d;
-    margin-bottom: 1.8rem;
-}
-
-h6 {
-    font-family: 'Barlow', sans-serif; 
-    font-size:0.9rem;
-    text-transform:uppercase;
-    color:#3d3d3d;
-}
-
-p {
-    font-family: 'Barlow', sans-serif;
-    font-size: 1.1rem;
-    line-height: 2.2rem;
-    color: #28282E; 
-}
  /* hero */
- .jumbotron {
-     background-color:white;
-     -webkit-font-smoothing: antialiased;
-     -moz-font-smoothing: antialiased;
-     -o-font-smoothing: antialiased;
- }
- .hero-image {
-    background-image:url("../Img/matra/Mockup\ 02\ -\ Silver.png");
-    max-width: 100%;
-    background-position: center;
+.mantra{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    background-position: 50% 60%;
     background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
+    background-image: url;
   }
-.dash {
-    width: 2rem;
-    border-top: .15rem solid;
-    position: absolute;
-    margin-top: 0.5rem;
-}
-.jumbotron .col-md-4 {
-    padding-top: 5rem;
-}
+
 .jumbotron p {
     padding-top: 1rem;
-    font-size:16px;
     font-family: 'Barlow', sans-serif; 
     color:black;
     font-size: 16px;
-    line-height: 1.9rem;
+    line-height: 1.7rem;
     letter-spacing: 1px;
 }
 .display-3 {
-    padding-top:2.5rem;
+    padding-top: 5rem;
     font-family: 'Noto Serif', sans-serif; 
     font-size:3.5rem;
     color:black;   
-    letter-spacing: 1rem;
+    letter-spacing: 0.4rem;
 }
 
 /* section1 */
-
+.content-p h2 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:1.8rem;
+    color:black;   
+}
 .content-1 img{
     margin-top: 50x;
     margin-bottom: 80px;
     width:100%;
 }
 .content-p p {
-   
+    font-family: 'Barlow', sans-serif; 
+    color:black;
     padding-top:1.5rem;
     line-height: 2rem;
 }
@@ -120,10 +79,15 @@ p {
     transform: skew(0deg, 5deg);  
 }
 .content2 .row h3 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:2rem;
+    color:black;
     transform: skew(0deg, -5deg);  
 }
 .content2 .row p {
+    font-family: 'Barlow', sans-serif;
     line-height: 1.8rem; 
+    color:black;
     padding-bottom: 15px;
     transform: skew(0deg, -5deg);  
 }
@@ -144,29 +108,75 @@ p {
     margin-right: 20px;  
     margin-bottom: 15px;
 }
-/* section3 */
+
+/* section3 - 1 */
+
 .section3 {
     margin-top: 100px;
 }
-#img-middle {
-    margin-left:-5rem;    
+.content3-1 .icon-search {
+    margin-bottom: 1.4rem;
+    font-size:2.2rem;
+}
+.content3-1 .quote {
+    margin-bottom: 1.4rem;
+    font-size:1.2rem;
+    color:darkgray;
+}
+
+.content3-1 .reivews {
+    line-height: 2rem;
+}
+.content3-1 h3 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:2rem;
+}
+
+.content3-1 p {
+    font-family: 'Barlow', sans-serif; 
+    color:black;
+    line-height: 2rem;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+
+/* section3 */
+.section3 img {
+    margin-top: 1.4rem;
+}
+.content3 h3 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:2rem;
+}
+.content3 p{
+    font-family: 'Barlow', sans-serif; 
+    color:black;
+    margin-bottom: 0;
 }
 .content3 .row h4 {
     font-family: 'Noto Serif KR', sans-serif; 
-    font-size:1.8rem;
-    margin-top: 3rem;
+    font-size:1.6rem;
+    margin-top: 1.5rem;
 }
-.content-user {
-    margin: auto;
+.content3 i {
+    font-size: 2.2rem;
 }
+
 
 /* section4 */
 .section4 {
     margin-top: 130px;
 }
-
+.content4 h3 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:1.8rem;
+}
 .content4 p {
+    font-family: 'Barlow', sans-serif; 
+    color:black;
     line-height: 1.5rem;
+    padding-top: 0px;
 }
 /* section5 */
 .skewed-bg2 {
@@ -182,7 +192,7 @@ p {
 
     transform: skew(0deg, -5deg);  
 }
-.content5 {
+.content5 .row img {
     font-family: 'Noto Serif KR', sans-serif; 
     font-size:2rem;
     -webkit-transform: skew(0deg, 5deg);  
@@ -191,28 +201,34 @@ p {
     -o-transform: skew(0deg, 5deg);  
     transform: skew(0deg, 5deg);  
 }
-
-.conbox1 {
-    padding-top: 10rem;
+.content5 h3 {
+    color:black;
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:2rem;
+    -webkit-transform: skew(0deg, 5deg);  
+    -moz-transform: skew(0deg, 5deg);  
+    -ms-transform: skew(0deg, 5deg);  
+    -o-transform: skew(0deg, 5deg);
+    transform: skew(0deg, 5deg);  
 }
-.conbox2 {
-
-    padding-top: 2rem;
-}
-.conbox3 {
-    padding-top: 2rem;
-    padding-bottom: 5rem;
-
+.content5 p {
+    font-family: 'Barlow', sans-serif; 
+    color:black;
+    line-height: 1.5rem;
+    -webkit-transform: skew(0deg, 5deg);  
+    -moz-transform: skew(0deg, 5deg);  
+    -ms-transform: skew(0deg, 5deg);  
+    -o-transform: skew(0deg, 5deg);
+    transform: skew(0deg, 5deg);  
 }
 
 /* section6 */
 .section6 {
-    margin-top: 80px;
+    margin-top: 100px;
 }
 .content6 h3 {
     font-family: 'Noto Serif KR', sans-serif; 
     font-size:2rem;
-    padding-top: 100px;
 }
 .content6 p {
     font-family: 'Barlow', sans-serif; 
@@ -266,10 +282,6 @@ p {
     transform: translateX(-50%);
     z-index: 100;
     }
-
-.paper {
-    margin-bottom: 6rem;
-}
 
 /* section8 */
 
@@ -342,25 +354,17 @@ p {
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.content10 h3 { 
+.content10 h3 {
+    font-family: 'Noto Serif KR', sans-serif; 
     font-size:2rem;
 }
 .content10 p {
+    font-family: 'Barlow', sans-serif; 
     color:black;
     line-height: 1.8rem;
     padding-bottom: 1.5rem;
 }
 
-/* section12 */
-.section12 {
-    margin-top: 80px;
-    padding-top: 80px;
-    padding-bottom: 30px;
-}
-
-.section12 h3 {
-    padding-bottom: 2rem;
-}
 
 /* previous next */
 .section11 {
@@ -495,7 +499,7 @@ p {
     .jumbotron p {
         padding-top: 1rem;
         font-family: 'Barlow', sans-serif; 
-    
+        color:white;
         font-size: 14px;
         line-height: 1.7rem;
         letter-spacing: 0.7px;
@@ -504,7 +508,7 @@ p {
         padding-top: 5rem;
         font-family: 'Noto Serif', sans-serif; 
         font-size:3rem;
-    
+        color:white;   
         letter-spacing: 1rem;
     }
     /* section1 */
@@ -560,24 +564,12 @@ p {
         margin-top: 4rem;
         margin-bottom: 2rem;
     }
-    .conbox1 .col-sm-12 {
-        margin-top: 4rem;
-        padding-left: 0;
-    }
-    .pages p {
-        padding: 0;margin: 0;
-
-    }
 }
 
 
 @media (min-width: 576px){
 .jumbotron {
     padding: 2rem 2rem;
-}
-.conbox1 .col-xs-12 {
-    margin-top: 4rem;
-    padding-left: 0;
 }
 
 }
