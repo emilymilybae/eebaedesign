@@ -5,75 +5,162 @@ html {
     margin-left:3rem;
 }
 .navbar {
-    background-color:white; 
-    padding:1rem 2rem;
+    background-color:transparent; 
+    padding: 1rem 2rem 0.5rem 2rem;
+    margin-bottom: 0;
+}
+.navbar-default {
+        background-color: transparent !important;
+        border-color: transparent;
+        background-image: none;
+        box-shadow: none;
 }
 .nav-item{
     padding-right: 1.3rem;
     letter-spacing: 0.3rem;
  }
  .nav-item a {
-    font-family: 'Barlow', sans-serif;  
-    font-size:0.85rem;
+    font-family: 'Barlow', sans-serif;
+    font-size: 0.85rem;
     padding-right: 2.5rem;
     letter-spacing: 0.3rem;
-    color:#3d3d3d;
+    color: white;
     text-decoration: none;
-    font-weight:600;
+    font-weight: 500;
  }
  .nav-item:hover a {
     color:#FF5555;
     transition: all .3s ease-in-out;
  }
+
+/* font */
+h2 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:2rem;
+}
+h3 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:2rem;
+}
+h4 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:1.8rem;
+}
+h5 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size:1.1rem;
+    color:#3d3d3d;
+    margin-bottom: 1.8rem;
+}
+
+h6 {
+    font-family: 'Barlow', sans-serif; 
+    font-size:0.9rem;
+    text-transform:uppercase;
+    color:#3d3d3d;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    color: #28282E; 
+}
+small {
+    text-transform:uppercase;
+}
+
  /* hero */
-.mantra{
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-    background-position: 50% 60%;
-    background-repeat: no-repeat;
-    position: relative;
-    background-image: url;
+ .jumbotron {
+    background-color: #0288D1;
+    background-size: cover;
+    height:550px;
+    padding: 0;
   }
 
+.jumbotron .container {
+    height: 600px;
+    padding: 0;
+    background-image: url('../Img/shopgoodwill/shopgoodwill-bg.png');
+    background-size: 900px;
+    background-position: 130% 40%;
+    background-repeat: no-repeat;
+}
+.jumbotron .dash {
+    color:white;
+}
+.jumbotron .container .col-xl-4 {
+    margin-top: 5rem;
+}
+.fullheight {
+    padding: 0;
+}
 .jumbotron p {
     padding-top: 1rem;
     font-family: 'Barlow', sans-serif; 
-    color:black;
+    color:white;
     font-size: 16px;
     line-height: 1.7rem;
     letter-spacing: 1px;
 }
 .display-3 {
-    padding-top: 5rem;
     font-family: 'Noto Serif', sans-serif; 
     font-size:3.5rem;
-    color:black;   
+    color:white;   
     letter-spacing: 0.4rem;
+    padding-top:2.5rem;
+}
+.hero .col-md-4 {
+    padding-top: 7rem;
+}
+.hero .dash {
+    width: 2rem;
+    border-top: .15rem solid;
+    position: absolute;
+    margin-top: 0.5rem;
 }
 
-/* section1 */
-.content-p h2 {
-    font-family: 'Noto Serif KR', sans-serif; 
-    font-size:1.8rem;
-    color:black;   
+/* Proposal */
+.Proposal {
+    margin-top: 6rem;
+    height: auto;
+    padding: 4rem 0 3rem 0;
+    margin-bottom: 3rem;
+
 }
-.content-1 img{
-    margin-top: 50x;
-    margin-bottom: 80px;
-    width:100%;
+.Proposal h3 {
+    margin: 2rem 0;
 }
-.content-p p {
-    font-family: 'Barlow', sans-serif; 
-    color:black;
-    padding-top:1.5rem;
+.Proposal strong {
+    font-weight: 500i;
+}
+.Proposal .dash {
+    width: 2rem;
+    border-top: .15rem solid;
+    position: absolute;
+    margin-top: 0.5rem;
+}
+.Proposal .Deliverable {
+    list-style: none;
+    padding-inline-start: 0;
     line-height: 2rem;
+    font-family: 'Barlow', sans-serif; 
+    font-size: 1.1rem;
 }
+.Proposal ul li a{
+    text-decoration: none;
+    color:#28282E;
+}
+.Proposal ul li:hover a {
+    color:#0288D1;
+}
+
 /* section2 */
 .skewed-bg {
     background:#e9ecef;
     height: auto;
-    margin-top: 130px;
+    margin-top: 80px;
     padding-top: 100px;
     padding-bottom: 110px;
     transform: skew(0deg, 5deg);  
@@ -84,11 +171,21 @@ html {
     color:black;
     transform: skew(0deg, -5deg);  
 }
+.content2 h5 {
+    transform: skew(0deg, -5deg);  
+}
+.content2 .dash {
+    transform: skew(0deg, -5deg);
+    margin-bottom: 2rem;    
+    width: 2rem;
+    position: absolute;
+    border-top: .15rem solid;
+    margin-top: 1rem;
+}
 .content2 .row p {
-    font-family: 'Barlow', sans-serif;
     line-height: 1.8rem; 
-    color:black;
-    padding-bottom: 15px;
+    padding-top: 2rem;
+    padding-bottom: 8px;
     transform: skew(0deg, -5deg);  
 }
 .content-user {
@@ -110,6 +207,14 @@ html {
 }
 
 /* section3 - 1 */
+.wrap {
+    background-image: url('../Img/shopgoodwill/Isometric\ Web\ Mockup_hi.png');
+    background-position: 300% 100%;
+    background-repeat: no-repeat;
+    background-size: 1120px;
+    padding-bottom: 5rem;
+    margin-top: 6rem;
+}
 
 .section3 {
     margin-top: 100px;
@@ -123,9 +228,15 @@ html {
     font-size:1.2rem;
     color:darkgray;
 }
+.content3-1 .icon-quote-right {
+    padding-left: 24rem;
+    font-size:1.2rem;
+    color:darkgray;
+}
 
 .content3-1 .reivews {
     line-height: 2rem;
+    padding-top: 5rem;
 }
 .content3-1 h3 {
     font-family: 'Noto Serif KR', sans-serif; 
@@ -135,7 +246,7 @@ html {
 .content3-1 p {
     font-family: 'Barlow', sans-serif; 
     color:black;
-    line-height: 2rem;
+    line-height: 1.8rem;
     font-size: 1.3rem;
     margin-bottom: 0;
 }
@@ -153,6 +264,7 @@ html {
     font-family: 'Barlow', sans-serif; 
     color:black;
     margin-bottom: 0;
+    margin-top: 3rem;
 }
 .content3 .row h4 {
     font-family: 'Noto Serif KR', sans-serif; 
@@ -162,7 +274,12 @@ html {
 .content3 i {
     font-size: 2.2rem;
 }
-
+.content3 .dash {
+    width: 2rem;
+    border-top: .15rem solid;
+    position: absolute;
+    margin-top: 0.5rem;
+}
 
 /* section4 */
 .section4 {
@@ -444,9 +561,38 @@ html {
 /* media */
 
 @media (max-width: 992px){
-    .container {
+  .container {
     padding: 0 2em;
+    height: 1000px;
   }
+  .jumbotron .container {
+    height: 600px;
+    padding: 0;
+    background-image: url('../Img/shopgoodwill/shopgoodwill-bg.png');
+    background-size: 700px;
+    background-position: center 150%;
+    background-repeat: no-repeat;
+}
+.display-3 {
+    font-family: 'Noto Serif', sans-serif; 
+    font-size:3.5rem;
+    color:white;   
+    letter-spacing: 0.4rem;
+    padding-top:2.5rem;
+}
+.display-3 p {
+    padding-top: 0;
+}
+.hero .col-md-4 {
+    padding-top: 7rem;
+}
+.hero .dash {
+    width: 2rem;
+    border-top: .15rem solid;
+    position: absolute;
+    margin-top: 0.5rem;
+}
+
   /* section3 */
 
     .content3 .row h3{
@@ -478,8 +624,6 @@ html {
     margin:auto;
 }
 
-
-
 }
 
 
@@ -488,28 +632,31 @@ html {
     .container {
         padding: 0 2em;
         overflow-wrap: break-word;
+        text-align: center;
     }
-    .mantra{
-        background-position: 50% 60%;
-        background-repeat: no-repeat;
-        position: relative;
-        background-color: rgba(0, 0, 0, 0.7);
-        background-blend-mode: multiply;
-      }
+    small {
+        text-align: center;
+    }
+    .jumbotron .dash {
+    position: inherit;
+    margin-top: 0.5rem;
+    }
     .jumbotron p {
-        padding-top: 1rem;
+        text-align: center;
+        padding-top: 0rem;
         font-family: 'Barlow', sans-serif; 
         color:white;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.7rem;
         letter-spacing: 0.7px;
     }
     .display-3 {
-        padding-top: 5rem;
+        text-align: center;
+        padding-top: 2.5rem;
         font-family: 'Noto Serif', sans-serif; 
         font-size:3rem;
         color:white;   
-        letter-spacing: 1rem;
+    
     }
     /* section1 */
     .content-1 .content-box{
@@ -568,8 +715,8 @@ html {
 
 
 @media (min-width: 576px){
-.jumbotron {
-    padding: 2rem 2rem;
+.jumbotron { padding: 0;
+    
 }
 
 }
