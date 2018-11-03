@@ -307,6 +307,19 @@ strong {
      text-align: left;
 
  }
+ .navbar-nav {
+     margin-top: 1rem;
+ }
+ .nav-item {
+     padding: 3rem 1rem;
+     line-height: 1rem;
+     text-align: center;
+ }
+ .nav-item a {
+     color:black;
+     font-size: 1rem;
+     font-family: 'Barlow', sans-serif;  
+ }
 }
 @media (min-width: 576px){
 .jumbotron {
@@ -365,6 +378,7 @@ footer .fas {
 
 footer .favi li:first-child {
     margin-right: 0.9rem;
+    margin-left: 0.2rem;
 }
 
 footer .favi li {
