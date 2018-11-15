@@ -1,0 +1,142 @@
+html {
+    scroll-behavior: smooth;
+  }
+.navbar-brand {
+    margin-left:3rem;
+}
+.navbar {
+    background-color:white; 
+    padding:1rem 2rem 0.5rem 2rem;
+}
+.nav-item{
+    padding-right: 1.3rem;
+    letter-spacing: 0.3rem;
+ }
+.nav-item a {
+    font-family: 'Barlow', sans-serif;  
+    font-size:0.85rem;
+    padding-right: 2.5rem;
+    letter-spacing: 0.3rem;
+    color:#3d3d3d;
+    text-decoration: none;
+    font-weight:500;
+ }
+.nav-item:hover a {
+    color:#FF5555;
+    transition: all .3s ease-in-out;
+ }
+h2 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:2rem;
+}
+h3 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:2rem;
+}
+h4 {
+    font-family: 'Noto Serif KR', sans-serif; 
+    font-size:1.8rem;
+}
+h5 {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-size:1.1rem;
+    color:#3d3d3d;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+h6 {
+    font-family: 'Barlow', sans-serif; 
+    font-size:0.9rem;
+    text-transform:uppercase;
+    color:#3d3d3d;
+}
+
+p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    color: #28282E; 
+
+}
+small {
+    color:#3d3d3d;
+    text-transform:uppercase;
+}
+
+ /* hero */
+ .jumbotron {
+    background-color:white;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
+.hero-image {
+   background-image:url("../Img/Fitpal/BG-White.png");
+   max-width: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+ }
+ .jumbotron .dash {
+   width: 2rem;
+   border-top: .15rem solid;
+   position: absolute;
+   margin-top: 0.5rem;
+}
+.jumbotron .col-md-4 {
+   padding-top: 5rem;
+}
+.jumbotron p {
+   padding-top: 1rem;
+   font-family: 'Barlow', sans-serif; 
+   color:black;
+   line-height: 1.9rem;
+}
+.display-3 {
+   padding-top:2.5rem;
+   font-family: 'Noto Serif', sans-serif; 
+   font-size:3.5rem;
+   color:black;   
+   letter-spacing: 1rem;
+}
+
+/* Proposal */
+.Proposal {
+   background:linear-gradient(rgba(190, 190, 255, 0.3), rgba(224, 220, 226, 0.3));
+   height: auto;
+   padding: 4rem 0 3rem 0;
+   margin-bottom: 3rem;
+}
+.Proposal p {
+   line-height: 1.9rem;
+}
+
+.Proposal h3 {
+   margin: 2rem 0;
+}
+.Proposal strong {
+   font-weight: 500i;
+}
+.Proposal .dash {
+   width: 2rem;
+   border-top: .15rem solid;
+   position: absolute;
+   margin-top: 0.5rem;
+}
+.Proposal .Deliverable {
+   list-style: none;
+   padding-inline-start: 0;
+   line-height: 2rem;
+}
+.Proposal ul li a{
+   font-family: 'Barlow', sans-serif; 
+   text-decoration: none;
+   color:#28282E;
+   font-size: 1.1rem;
+}
+.Proposal ul li:hover a {
+   color:#0288D1;
+}

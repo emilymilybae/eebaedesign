@@ -242,6 +242,7 @@ small {
     border-top: .15rem solid;
     margin-top: 0.5rem;
 }
+
 /* Style guide */
 .skewed-bg2 {
     background:#e9ecef;
@@ -341,6 +342,11 @@ small {
 .paper {
     margin-bottom: 6rem;
 }
+.section7 ul {
+    margin-top: 4rem;
+    padding:1rem 4rem 4rem 4rem;
+
+}
 
 /* section8 */
 
@@ -352,7 +358,7 @@ small {
 .content8 h3{
     font-family: 'Noto Serif KR', sans-serif; 
     font-size:2rem;
-    margin-top: 2rem;
+
 }
 .content8 p {
     font-family: 'Barlow', sans-serif; 
@@ -360,7 +366,7 @@ small {
 }
 .content8 .dash {
     position: absolute;
-    top:7.5rem;
+    top:5.5rem;
     width: 2rem;
     border-top: .15rem solid;
     margin-top: 0.5rem;
@@ -598,13 +604,23 @@ small {
     padding-left:0px;
     margin-left: 0px;
 }
-     /* section9 */
+/* section4 */
+.section4 h3 {
+    margin-top: 4rem;
+}
+
+/* section7 */
+.section7 ul {
+    margin-top: 0rem;
+    padding:1rem;
+
+}
+
+/* section9 */
 .content9 .img-box {
     width: 100%;
     margin:auto;
 }
-
-
 
 }
 
@@ -612,7 +628,8 @@ small {
 @media (max-width: 768px) {
     /* hero */
     .container {
-        padding: 0 2em;
+        padding-left: 2em;
+        padding-right: 2em;
         overflow-wrap: break-word;
     }
     .mantra{
@@ -661,7 +678,6 @@ small {
     }
     .content-user {
         margin-top: 3rem;
-
     }
     .survey-img1 {
         width: 100%;
@@ -670,13 +686,34 @@ small {
         width: 100%;
         padding-left:0px;
     }
+
+    /* section4 */
+    .section4 h3 {
+        margin-top: 4rem;
+    }
+
+    /* section6 */
+    .section6 {
+        padding-bottom: 3rem;
+
+    }
     /* section7 */
     .section7 {
         padding-top: 2.5rem;  
-    }
+        text-align: left;
+        padding-top: 3rem;
+        margin-top: 2rem;
+}
     .section7 img{
         padding-top: 1.5rem;  
     }
+    
+.section7 ul {
+    margin-top: 4rem;
+    padding:0rem;
+
+}
+
     /* section8 */
     .section8 img {
         margin-bottom: 3rem;

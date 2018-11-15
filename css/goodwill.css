@@ -75,16 +75,15 @@ small {
  .jumbotron {
     background-color: #0288D1;
     background-size: cover;
-    height:550px;
+    height:500px;
     padding: 0;
   }
 
 .jumbotron .container {
     height: 600px;
     padding: 0;
-    background-image: url('../Img/shopgoodwill/shopgoodwill-bg.png');
-    background-size: 900px;
-    background-position: 130% 40%;
+    background-image: url('../Img/shopgoodwill/shopgoodwill-bg\ 2.png');
+    background-size: cover;
     background-repeat: no-repeat;
 }
 .jumbotron .dash {
@@ -208,12 +207,12 @@ small {
 
 /* section3 - 1 */
 .wrap {
-    background-image: url('../Img/shopgoodwill/Isometric\ Web\ Mockup_hi.png');
-    background-position: 300% 100%;
+    background-image: url('../Img/shopgoodwill/Isometric\ Web\ Mockup_hi\ copy.png');
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 1120px;
     padding-bottom: 5rem;
     margin-top: 6rem;
+    background-attachment: fixed;
 }
 
 .section3 {
@@ -283,18 +282,21 @@ small {
 
 /* section4 */
 .section4 {
-    margin-top: 130px;
+    margin-top: 100px;
 }
-.content4 h3 {
-    font-family: 'Noto Serif KR', sans-serif; 
-    font-size:1.8rem;
+.content4 {
+    padding-top: 6rem; 
 }
 .content4 p {
-    font-family: 'Barlow', sans-serif; 
-    color:black;
     line-height: 1.5rem;
-    padding-top: 0px;
 }
+.section4 .dash {
+    top:4.7rem;
+    width: 2rem;
+    border-top: .15rem solid;
+    margin-top: 0.5rem;
+}
+
 /* section5 */
 .skewed-bg2 {
     background:#e9ecef;
@@ -565,7 +567,7 @@ small {
     padding: 0 2em;
     height: 1000px;
   }
-  .jumbotron .container {
+.jumbotron .container {
     height: 600px;
     padding: 0;
     background-image: url('../Img/shopgoodwill/shopgoodwill-bg.png');
@@ -573,6 +575,7 @@ small {
     background-position: center 150%;
     background-repeat: no-repeat;
 }
+
 .display-3 {
     font-family: 'Noto Serif', sans-serif; 
     font-size:3.5rem;
@@ -591,6 +594,10 @@ small {
     border-top: .15rem solid;
     position: absolute;
     margin-top: 0.5rem;
+}
+.section4 .container {
+    padding: 5rem 2em;
+    height: 1300px;
 }
 
   /* section3 */
@@ -627,12 +634,34 @@ small {
 }
 
 
+@media (max-width: 992px){
+    .jumbotron .container .col-xl-4 {
+        margin-top: 2rem;
+    }
+    .display-3 {
+        text-align: left;
+        padding-top: 1rem;
+        font-size:3rem;
+        color:white;   
+    }
+    .jumbotron p {
+        padding-top: 0.2rem;
+        font-family: 'Barlow', sans-serif; 
+        color:white;
+        font-size: 16px;
+        line-height: 1.7rem;
+        letter-spacing: 0.7px;
+    }
+  }
 @media (max-width: 768px) {
     /* hero */
-    .container {
+    .jumbotron .container {
         padding: 0 2em;
         overflow-wrap: break-word;
         text-align: center;
+    }
+    .hero {
+        padding-bottom: 4rem;
     }
     small {
         text-align: center;
@@ -640,6 +669,9 @@ small {
     .jumbotron .dash {
     position: inherit;
     margin-top: 0.5rem;
+    }
+    .jumbotron .container .col-xl-4 {
+        margin-top: 2rem;
     }
     .jumbotron p {
         text-align: center;
@@ -652,11 +684,14 @@ small {
     }
     .display-3 {
         text-align: center;
-        padding-top: 2.5rem;
+        padding-top: 0.8rem;
         font-family: 'Noto Serif', sans-serif; 
         font-size:3rem;
         color:white;   
     
+    }
+    .jumbotron .container .col-xl-4 {
+        margin-top: 1.5rem;
     }
     /* section1 */
     .content-1 .content-box{
@@ -714,9 +749,23 @@ small {
 }
 
 
-@media (min-width: 576px){
-.jumbotron { padding: 0;
-    
+@media (max-width: 576px){
+.jumbotron { 
+    padding: 0;   
 }
-
+.jumbotron .container {
+    height: 600px;
+    padding: 0;
+    background-image: url('../Img/shopgoodwill/shopgoodwill-bg.png');
+    background-size: 500px;
+    background-position: center 80%;
+    background-repeat: no-repeat;
+}
+.display-3 {
+    font-family: 'Noto Serif', sans-serif; 
+    font-size:2.5rem;
+    color:white;   
+    letter-spacing: 0.2rem;
+    padding-top:2.5rem;
+}
 }
