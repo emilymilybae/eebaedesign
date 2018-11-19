@@ -212,7 +212,7 @@ small {
     background-repeat: no-repeat;
     padding-bottom: 5rem;
     margin-top: 6rem;
-    background-attachment: fixed;
+    background-position: absolute;
 }
 
 .section3 {
@@ -768,4 +768,10 @@ small {
     letter-spacing: 0.2rem;
     padding-top:2.5rem;
 }
+}
+
+@media (max-width: 400px){
+    .navbar-brand {
+        margin:auto;
+    }
 }

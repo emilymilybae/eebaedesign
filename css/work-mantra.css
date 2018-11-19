@@ -6,25 +6,27 @@ html {
 }
 .navbar {
     background-color:white; 
-    padding:1rem 2rem 0.5rem 2rem;
+    padding:1rem 2rem;
 }
 .nav-item{
     padding-right: 1.3rem;
     letter-spacing: 0.3rem;
  }
-.nav-item a {
+ .nav-item a {
     font-family: 'Barlow', sans-serif;  
     font-size:0.85rem;
     padding-right: 2.5rem;
     letter-spacing: 0.3rem;
     color:#3d3d3d;
     text-decoration: none;
-    font-weight:500;
+    font-weight:600;
  }
-.nav-item:hover a {
+ .nav-item:hover a {
     color:#FF5555;
     transition: all .3s ease-in-out;
  }
+
+
 h2 {
     font-family: 'Noto Serif KR', sans-serif; 
     font-size:2rem;
@@ -234,7 +236,8 @@ small {
     padding-top: 6rem; 
 }
 .content4 p {
-    line-height: 1.5rem;
+    line-height: 2rem;
+
 }
 .section4 .dash {
     top:4.7rem;
@@ -264,6 +267,9 @@ small {
 }
 .content5 h5{
     margin-bottom: 1rem;
+}
+.content5 p{
+    line-height: 2rem;
 }
 .content5 {
     font-family: 'Noto Serif KR', sans-serif; 
@@ -309,7 +315,7 @@ small {
 .content6 p {
     font-family: 'Barlow', sans-serif; 
     color:black;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 
@@ -331,7 +337,8 @@ small {
 .content7 p {
     font-family: 'Barlow', sans-serif; 
     color:black;
-    line-height: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
 }
 .content7 .dash {
     top:4.7rem;
@@ -586,7 +593,6 @@ small {
   }
     .content3 .row h4{
     font-size:1.5rem;
-    width: 25%;
   }
     .content-user p {
     font-size:0.9rem;
@@ -647,11 +653,11 @@ small {
         letter-spacing: 0.7px;
     }
     .display-3 {
-        padding-top: 5rem;
+        padding-top: 2.5rem;
         font-family: 'Noto Serif', sans-serif; 
         font-size:3rem;
     
-        letter-spacing: 1rem;
+        letter-spacing: 0.7rem;
     }
     /* section1 */
     .content-1 .content-box{
@@ -740,10 +746,27 @@ small {
 @media (min-width: 576px){
 .jumbotron {
     padding: 2rem 2rem;
+    height:650px;
 }
 .conbox1 .col-xs-12 {
     margin-top: 4rem;
     padding-left: 0;
 }
 
+}
+@media (max-width: 400px){
+    .navbar-brand {
+        margin-left: 0rem;
+    }
+    .hero-image {
+        background-size: 700px;
+        background-position: 100% 107%;
+        background-repeat: no-repeat;
+    }
+    .display-3 {
+        padding-top: 2rem;
+    }
+    .jumbotron .col-md-4 {
+        padding-top: 1rem;
+    }
 }

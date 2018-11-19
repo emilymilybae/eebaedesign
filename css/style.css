@@ -325,8 +325,14 @@ strong {
 .jumbotron {
     padding: 2rem 2rem;
 }
-
 }
+@media (max-width: 400px){
+    .navbar-brand {
+        margin-left: 0rem;
+    }
+}
+
+
 
 /* footer */
 footer {
