@@ -149,7 +149,7 @@ html {
 .btn-primary { 
     width: 8rem; 
     font-family: 'Barlow', sans-serif; 
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing:0.3rem;
     font-size: 0.8rem;
     color:white; 
@@ -162,7 +162,7 @@ html {
 .btn-view {
     width: 10rem; 
     font-family: 'Barlow', sans-serif; 
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing:0.2rem;
     font-size: 0.8rem;
     color:white; 
@@ -234,7 +234,9 @@ footer small {
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
 }
-
+small {
+    font-weight: 300;
+}   
 .footer-menu:hover a { 
     font-family: 'Barlow', sans-serif;  
     color:#FF5555;
@@ -283,4 +285,10 @@ footer ul li a{
 footer ul li a:hover {
     color:#FF5555;
     text-decoration:none;
+}
+
+@media (max-width: 400px){
+    .list-unstyled {
+        margin-top: 3rem;
+    }
 }
