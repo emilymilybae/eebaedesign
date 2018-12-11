@@ -107,31 +107,30 @@
 
 html {
     scroll-behavior: smooth;
-  }
-.navbar-brand {
-    margin-left:3rem;
+  }.navbar-brand {
+   margin-left:3rem;
 }
 .navbar {
-    background-color:white; 
-    padding:1rem 2rem 0.5rem 2rem;
+   background-color:white; 
+   padding:1rem 2rem;
 }
 .nav-item{
-    padding-right: 1.3rem;
-    letter-spacing: 0.3rem;
- }
+   padding-right: 1.3rem;
+   letter-spacing: 0.3rem;
+}
 .nav-item a {
-    font-family: 'Barlow', sans-serif;  
-    font-size:0.85rem;
-    padding-right: 2.5rem;
-    letter-spacing: 0.3rem;
-    color:#3d3d3d;
-    text-decoration: none;
-    font-weight:500;
- }
+   font-family: 'Barlow', sans-serif;  
+   font-size:0.85rem;
+   padding-right: 2.5rem;
+   letter-spacing: 0.3rem;
+   color:#3d3d3d;
+   text-decoration: none;
+   font-weight:600;
+}
 .nav-item:hover a {
-    color:#FF5555;
-    transition: all .3s ease-in-out;
- }
+   color:#FF5555;
+   transition: all .3s ease-in-out;
+}
 h2 {
     font-family: 'Noto Serif KR', sans-serif; 
     font-size:2rem;
@@ -894,6 +893,29 @@ small {
 }
 
 
+@media (max-width: 992px){
+
+   .hero-image {
+       background-size: 130%;
+   }
+   .jumbotron {
+       height: auto;
+   }
+   .navbar-nav {
+       margin-top: 1rem;
+   }
+   .nav-item {
+       padding: 2rem 1rem;
+       line-height: 1rem;
+       text-align: center;
+   }
+   .nav-item a {
+       color:black;
+       font-size: 0.9rem;
+       font-family: 'Barlow', sans-serif;
+       padding-right: 0rem;
+   }
+
 @media (min-width: 576px){
 .jumbotron {
    padding: 2rem 2rem;
@@ -906,18 +928,29 @@ small {
 
 }
 @media (max-width: 400px){
-   .navbar-brand {
-       margin-left: 0rem;
-   }
-   .hero-image {
-       background-size: 700px;
-       background-position: 100% 107%;
-       background-repeat: no-repeat;
-   }
-   .display-3 {
-       padding-top: 2rem;
-   }
-   .jumbotron .col-md-4 {
-       padding-top: 1rem;
+.navbar-brand {
+   margin-left: 0rem;
+}
+.nav-item {
+   padding: 2rem 1rem;
+   line-height: 1rem;
+   text-align: center;
+}
+.nav-item a {
+   color:black;
+   font-size: 0.9rem;
+   font-family: 'Barlow', sans-serif;
+   padding-right: 0rem;
+}
+.hero-image {
+   background-size: 700px;
+   background-position: 100% 107%;
+   background-repeat: no-repeat;
+}
+.display-3 {
+   padding-top: 2rem;
+}
+.jumbotron .col-md-4 {
+   padding-top: 1rem;
    }
 }

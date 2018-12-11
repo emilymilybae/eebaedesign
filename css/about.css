@@ -292,3 +292,20 @@ footer ul li a:hover {
         margin-top: 3rem;
     }
 }
+
+@media (max-width: 992px){
+    .navbar-nav {
+        margin-top: 1rem;
+    }
+    .nav-item {
+        padding: 2rem 1rem;
+        line-height: 1rem;
+        text-align: center;
+    }
+    .nav-item a {
+        color:black;
+        font-size: 0.9rem;
+        font-family: 'Barlow', sans-serif;
+        padding-right: 0rem;
+    }
+}
